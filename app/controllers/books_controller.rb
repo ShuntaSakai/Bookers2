@@ -9,6 +9,10 @@ class BooksController < ApplicationController
     redirect_to 'books/new'##変更しなければならない。
   end
 
+  def index
+    @book = Book.new
+  end
+
   def show
   end
 
